@@ -58,4 +58,9 @@ public class AdminController {
 		else
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 	}
+	
+	@PostMapping("/newmethod")
+	public void newMethod() {
+		System.out.println("NEW METHOD ADDED");
+	}
 }
